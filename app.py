@@ -40,6 +40,8 @@ def create_dataframe_section(df):
 def main():
     df = Extraction.load_data()
     
+    create_dataframe_section()
+    
     st.dataframe(df)
 
 if __name__ == '__main__':
